@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>myPath</title>
+	<title>AI-Maze</title>
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/magic.min.css">
@@ -9,7 +9,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark" id="myNavbar">
-  		<a class="navbar-brand" href="#" id="logo">myPath</a>
+  		<a class="navbar-brand" href="#" id="logo">AI Maze</a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     		<span class="navbar-toggler-icon"></span>
 		</button>
@@ -41,16 +41,6 @@
 					    <a class="dropdown-item" href="#">Simple Spiral</a>
 					</div>
 				</li>
-		      	<li class="nav-item dropdown" id="speed">
-		      		<a class="nav-link dropdown-toggle speedDisplay" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          	Speed: Fast
-		        	</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					    <a class="dropdown-item" href="#">Slow</a>
-					    <a class="dropdown-item" href="#">Normal</a>
-					    <a class="dropdown-item" href="#">Fast</a>
-					</div>
-				</li>
 	    	</ul>
 
 	      	<button class="btn btn-outline-success btn-space" type="submit" id="startBtn">Start</button>
@@ -58,6 +48,10 @@
 	      	<!-- <button type="button" class="btn btn-outline-danger disabled" type="submit" id="stopBtn">Stop</button> -->
   		</div>
  	</nav>
+
+	<div class ="d-flex justify-content-center">
+		<h3>Siddhartha Rusiya</h3>
+    </div>
 
  	<div class="d-flex flex-row flex-wrap m-2 justify-content-around">	
  		<div class="d-flex p-2">
@@ -102,7 +96,7 @@
 		    <div class="modal-content">
 		      <div class="modal-header">
 		      	<div class="container-fluid" id="modalTitleContainer">
-		        	<h3 class="modal-title" id="exampleModalLongTitle">Welcome to myPath!</h3>
+		        	<h3 class="modal-title" id="exampleModalLongTitle">Welcome to AI-Maze!</h3>
 		        </div>
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
@@ -110,7 +104,7 @@
 		      </div>
 		      <div class="modal-body">
 		      	<div class="container-fluid" style="line-height: 120%">
-		      		<em style="font-size: 14px;">This is a quick tutorial that demonstrates how myPath works. If you want to skip this, then press the 'X' in the upper right-hand corner.</em>
+		      		<em style="font-size: 14px;">This is a quick tutorial that demonstrates how AI-Maze works. If you want to skip this, then press the 'X' in the upper right-hand corner.</em>
 		      	</div>
 		      	<hr>
 		        <div class="container-fluid">
@@ -124,9 +118,9 @@
 						<br>
 		        		<div class="card bg-light">
 						  <div class="card-body">
-						    <h5 class="card-title">What is myPath?</h5>
+						    <h5 class="card-title">What is AI-Maze?</h5>
 						    <p class="card-text">
-						    <em>myPath is a visualizing tool that shows how different pathfinding algorithms work. 
+						    <em>AI-Maze is a visualizing tool that shows how different pathfinding algorithms work. 
 						    <p>The program's objective is to go from the start node to the end node using a pathfinding algorithm. The program can only move horizontally or vertically, with each movement having a cost of one.</p>
 
 						    <p>Once the program is complete, the shortest path will be illuminated in yellow.
@@ -177,13 +171,13 @@
 						</div>
 						<br>
 						<div class="card border-success">
-						  <h5 class="card-header border-success">Enjoy myPath!</h5>
+						  <h5 class="card-header border-success">Enjoy AI-Maze!</h5>
 						  <div class="card-body">
 						    <p class="card-text"><em>If you want to revisit this tutorial, click the 'Tutorial' button at the end of the page.</em>
 						    <hr>
 						    <p>If you want to see other projects that I've created, check out my github!</p>
 						    </p>
-						    <a href="https://github.com/deckardmehdy" class="btn btn-primary">Github</a>
+						    <a href="https://github.com/sidrusiya/AI-Maze" class="btn btn-primary">Github</a>
 						  </div>
 						</div>
 		        	</div>
@@ -370,7 +364,6 @@
 	 	<div id="length" class="d-flex justify-content-center"> 	
 	 	</div>	 	
 	</div>
-
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

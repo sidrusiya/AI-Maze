@@ -285,17 +285,6 @@ function moveEnd(prevIndex, newIndex){
     return;
 }
 
-function updateSpeedDisplay(){
-	if (animationSpeed == "Slow"){
-		$(".speedDisplay").text("Speed: Slow");
-	} else if (animationSpeed == "Normal"){
-		$(".speedDisplay").text("Speed: Normal");
-	} else if (animationSpeed == "Fast"){
-		$(".speedDisplay").text("Speed: Fast");
-	}
-	return;
-}
-
 function updateStartBtnText(){
 	if (algorithm == "Depth-First Search (DFS)"){
 		$("#startBtn").html("Start DFS");
@@ -1126,46 +1115,14 @@ async function animateCells(){
 	//console.log("End of animation has been reached!");
 	return new Promise(resolve => resolve(true));
 }
-/*
-async function flash(color){
-	var item = "#logo";
-	var originalColor = $(item).css("color");
-	if (color == "green"){
-		var colorRGB = '40,167,50';
-	} else if (color == "red"){
-		var colorRGB = '255,0,0';
-	}
-	var delay = 1; //ms
-	for (var i = 0.45; i <= 2.6; i += 0.01){
-    	$(item).css("color", 'rgba(' + colorRGB + ','+Math.abs(Math.sin(i))+')');
-		await new Promise(resolve => setTimeout(resolve, delay));
-	}
-	$(item).css("color", originalColor);
-	return new Promise(resolve => resolve(true));
-}
-*/
 
 function getDelay(){
 	var delay;
-	if (animationSpeed === "Slow"){
-		if (algorithm == "Depth-First Search (DFS)") {
-			delay = 25;
-		} else {
-			delay = 20;
-		}
-	} else if (animationSpeed === "Normal") {
-		if (algorithm == "Depth-First Search (DFS)") {
-			delay = 15;
-		} else {
-			delay = 10;
-		}
-	} else if (animationSpeed == "Fast") {
 		if (algorithm == "Depth-First Search (DFS)") {
 			delay = 10;
 		} else {
 			delay = 5;
 		}
-	}
 	console.log("Delay = " + delay);
 	return delay;
 }
